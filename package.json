@@ -2,7 +2,7 @@
   "name": "protfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://christopherjoshy.github.io/TodoList_2/",
+  "homepage": "https://christopherjoshy.github.io/Protfolio/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
