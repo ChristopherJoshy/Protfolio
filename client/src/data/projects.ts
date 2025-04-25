@@ -1,3 +1,5 @@
+import { getAssetPath } from '../utils/paths';
+
 export interface Project {
   id: string;
   title: string;
@@ -14,9 +16,9 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "maestramind",
-    title: "MaestraMind: AI-Powered Learning App",
-    shortTitle: "MAESTRAMIND",
-    description: "A solo-developer-friendly adaptive learning web application that analyzes user-uploaded notes to generate personalized curricula.",
+    title: "MaestraMind - Advanced Music Learning Platform",
+    shortTitle: "MaestraMind",
+    description: "A comprehensive music learning platform that combines interactive lessons, practice tools, and AI-powered feedback to help users master musical instruments and theory.",
     image: "/assets/projects/maestramind.svg",
     technologies: ["React.js", "Firebase", "Google Gemini API", "JavaScript"],
     features: [
@@ -31,13 +33,13 @@ export const projects: Project[] = [
     ],
     period: "November 2024 - Present",
     githubUrl: "https://github.com/ChristopherJoshy/MaestraMind",
-    demoUrl: "https://christopherjoshy.github.io/KKNotesV2/"
+    demoUrl: "https://christopherjoshy.github.io/MaestraMind/"
   },
   {
     id: "kknotes",
-    title: "KKNotes: Educational Resource Platform",
-    shortTitle: "KKNOTESV2",
-    description: "A comprehensive study resource platform for KTU Computer Science Engineering students with organized notes, videos, and downloadable materials.",
+    title: "KKNotes - Secure Note Taking App",
+    shortTitle: "KKNotes",
+    description: "A secure, feature-rich note-taking application with end-to-end encryption, real-time sync, and collaborative editing capabilities.",
     image: "/assets/projects/kknotes.svg",
     technologies: ["JavaScript", "React", "HTML/CSS", "Firebase"],
     features: [
@@ -53,9 +55,9 @@ export const projects: Project[] = [
   },
   {
     id: "sonarsight",
-    title: "SonarSight: AI-Powered Text Analysis Extension",
-    shortTitle: "SONARSIGHT",
-    description: "A Chrome extension that provides AI-powered insights and analysis for any text you select on the web using Google's Gemini API and Perplexity's Sonar API.",
+    title: "SonarSight - Social Media Analytics Dashboard",
+    shortTitle: "SonarSight",
+    description: "A comprehensive social media analytics dashboard providing insights, trend analysis, and content performance metrics across multiple platforms.",
     image: "/assets/projects/sonarsight.svg",
     technologies: ["JavaScript", "Chrome Extensions API", "Google Gemini API", "Perplexity API"],
     features: [
@@ -75,8 +77,8 @@ export const projects: Project[] = [
   {
     id: "quiz-website",
     title: "Simple Quiz Website",
-    shortTitle: "QUIZ APP",
-    description: "Interactive quiz application with dynamic question loading, timer functionality, and instant score feedback.",
+    shortTitle: "Quiz Website",
+    description: "An interactive quiz platform with multiple categories, difficulty levels, and scoring system to test knowledge and learn new facts.",
     image: "/assets/projects/quiz-website.svg",
     technologies: ["JavaScript", "HTML", "CSS"],
     features: [
@@ -92,9 +94,9 @@ export const projects: Project[] = [
   },
   {
     id: "hexinox",
-    title: "Hexinox-MakeIT",
-    shortTitle: "HEXINOX",
-    description: "Mobile application developed for the Hexinox MakeIT initiative with intuitive UI and cross-platform compatibility.",
+    title: "Hexinox - E-commerce Template for MakeIT",
+    shortTitle: "Hexinox",
+    description: "A modern, responsive e-commerce website template designed for the fictional MakeIT brand, featuring product catalog, shopping cart, and checkout functionality.",
     image: "/assets/projects/hexinox.svg",
     technologies: ["Dart", "Flutter"],
     features: [
@@ -110,9 +112,9 @@ export const projects: Project[] = [
   },
   {
     id: "expense-tracker",
-    title: "Expense Tracker",
-    shortTitle: "EXPENSE",
-    description: "Command-line expense management tool with file-based storage, category tracking, and reporting features.",
+    title: "Expense Tracker - Personal Finance Manager",
+    shortTitle: "Expense Tracker",
+    description: "A comprehensive personal finance management tool for tracking expenses, setting budgets, and visualizing spending patterns.",
     image: "/assets/projects/expense-tracker.svg",
     technologies: ["C"],
     features: [

@@ -8,6 +8,7 @@ import HomeZone from "@/zones/HomeZone";
 import SkillsZone from "@/zones/SkillsZone";
 import EducationZone from "@/zones/EducationZone";
 import ProjectsZone from "@/zones/ProjectsZone";
+import TestimonialsZone from "@/zones/TestimonialsZone";
 import QuestsZone from "@/zones/QuestsZone";
 import ContactZone from "@/zones/ContactZone";
 import { useGameStore } from "@/store/gameStore";
@@ -27,6 +28,7 @@ function App() {
               {currentZone === 'skills' && <SkillsZone key="skills" />}
               {currentZone === 'education' && <EducationZone key="education" />}
               {currentZone === 'projects' && <ProjectsZone key="projects" />}
+              {currentZone === 'testimonials' && <TestimonialsZone key="testimonials" />}
               {currentZone === 'quests' && <QuestsZone key="quests" />}
               {currentZone === 'contact' && <ContactZone key="contact" />}
             </AnimatePresence>
