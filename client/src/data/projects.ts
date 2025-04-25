@@ -1,5 +1,3 @@
-import { getAssetPath } from '../utils/paths';
-
 export interface Project {
   id: string;
   title: string;
@@ -13,21 +11,13 @@ export interface Project {
   demoUrl: string | null;
 }
 
-// Helper to get the correct asset path with base URL
-const getAssetPath = (path: string): string => {
-  const base = import.meta.env.BASE_URL || '/';
-  // Remove leading slash to avoid double slashes
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  return `${base}${cleanPath}`;
-};
-
 export const projects: Project[] = [
   {
     id: "maestramind",
-    title: "MaestraMind - Advanced Music Learning Platform",
-    shortTitle: "MaestraMind",
-    description: "A comprehensive music learning platform that combines interactive lessons, practice tools, and AI-powered feedback to help users master musical instruments and theory.",
-    image: getAssetPath("assets/projects/maestramind.svg"),
+    title: "MaestraMind: AI-Powered Learning App",
+    shortTitle: "MAESTRAMIND",
+    description: "A solo-developer-friendly adaptive learning web application that analyzes user-uploaded notes to generate personalized curricula.",
+    image: "/assets/projects/maestramind.svg",
     technologies: ["React.js", "Firebase", "Google Gemini API", "JavaScript"],
     features: [
       "Upload Multiple Notes (text input or file)",
@@ -45,10 +35,10 @@ export const projects: Project[] = [
   },
   {
     id: "kknotes",
-    title: "KKNotes - Secure Note Taking App",
-    shortTitle: "KKNotes",
-    description: "A secure, feature-rich note-taking application with end-to-end encryption, real-time sync, and collaborative editing capabilities.",
-    image: getAssetPath("assets/projects/kknotes.svg"),
+    title: "KKNotes: Educational Resource Platform",
+    shortTitle: "KKNOTESV2",
+    description: "A comprehensive study resource platform for KTU Computer Science Engineering students with organized notes, videos, and downloadable materials.",
+    image: "/assets/projects/kknotes.svg",
     technologies: ["JavaScript", "React", "HTML/CSS", "Firebase"],
     features: [
       "Created a comprehensive study resource platform for KTU CSE students",
@@ -63,10 +53,10 @@ export const projects: Project[] = [
   },
   {
     id: "sonarsight",
-    title: "SonarSight - Social Media Analytics Dashboard",
-    shortTitle: "SonarSight",
-    description: "A comprehensive social media analytics dashboard providing insights, trend analysis, and content performance metrics across multiple platforms.",
-    image: getAssetPath("assets/projects/sonarsight.svg"),
+    title: "SonarSight: AI-Powered Text Analysis Extension",
+    shortTitle: "SONARSIGHT",
+    description: "A Chrome extension that provides AI-powered insights and analysis for any text you select on the web using Google's Gemini API and Perplexity's Sonar API.",
+    image: "/assets/projects/sonarsight.svg",
     technologies: ["JavaScript", "Chrome Extensions API", "Google Gemini API", "Perplexity API"],
     features: [
       "AI-powered text analysis with multiple providers (Google Gemini & Perplexity)",
@@ -85,9 +75,9 @@ export const projects: Project[] = [
   {
     id: "quiz-website",
     title: "Simple Quiz Website",
-    shortTitle: "Quiz Website",
-    description: "An interactive quiz platform with multiple categories, difficulty levels, and scoring system to test knowledge and learn new facts.",
-    image: getAssetPath("assets/projects/quiz-website.svg"),
+    shortTitle: "QUIZ APP",
+    description: "Interactive quiz application with dynamic question loading, timer functionality, and instant score feedback.",
+    image: "/assets/projects/quiz-website.svg",
     technologies: ["JavaScript", "HTML", "CSS"],
     features: [
       "Dynamic question loading from JSON",
@@ -102,10 +92,10 @@ export const projects: Project[] = [
   },
   {
     id: "hexinox",
-    title: "Hexinox - E-commerce Template for MakeIT",
-    shortTitle: "Hexinox",
-    description: "A modern, responsive e-commerce website template designed for the fictional MakeIT brand, featuring product catalog, shopping cart, and checkout functionality.",
-    image: getAssetPath("assets/projects/hexinox.svg"),
+    title: "Hexinox-MakeIT",
+    shortTitle: "HEXINOX",
+    description: "Mobile application developed for the Hexinox MakeIT initiative with intuitive UI and cross-platform compatibility.",
+    image: "/assets/projects/hexinox.svg",
     technologies: ["Dart", "Flutter"],
     features: [
       "Cross-platform mobile application",
@@ -120,10 +110,10 @@ export const projects: Project[] = [
   },
   {
     id: "expense-tracker",
-    title: "Expense Tracker - Personal Finance Manager",
-    shortTitle: "Expense Tracker",
-    description: "A comprehensive personal finance management tool for tracking expenses, setting budgets, and visualizing spending patterns.",
-    image: getAssetPath("assets/projects/expense-tracker.svg"),
+    title: "Expense Tracker",
+    shortTitle: "EXPENSE",
+    description: "Command-line expense management tool with file-based storage, category tracking, and reporting features.",
+    image: "/assets/projects/expense-tracker.svg",
     technologies: ["C"],
     features: [
       "File-based data storage",
