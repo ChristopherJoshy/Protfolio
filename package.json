@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://christopherjoshy.github.io/ProtfolioG/",
+  "homepage": "https://christopherjoshy.github.io/Protfolio/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx server/index.ts",
     "build": "vite build",
